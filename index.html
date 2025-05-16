@@ -3,80 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name - CV</title>
+  <title>Winston D. Hurst – CV</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #ffffff;
       color: #333;
-      background-color: #fafafa;
     }
-    h1, h2 {
+    h1, h2, h3 {
+      color: #2e7d32;
+      margin-top: 40px;
       border-bottom: 1px solid #ccc;
-      padding-bottom: 0.25rem;
+      padding-bottom: 5px;
     }
-    a {
-      color: #0366d6;
-      text-decoration: none;
+    h1 {
+      text-align: center;
+      font-size: 2em;
     }
-    a:hover {
-      text-decoration: underline;
+    h2 {
+      font-size: 1.5em;
+    }
+    h3 {
+      font-size: 1.2em;
+      margin-top: 20px;
     }
     .section {
-      margin-top: 2rem;
-    }
-    .contact {
-      font-size: 0.95rem;
-      color: #555;
+      margin-bottom: 20px;
     }
     ul {
-      padding-left: 1.2rem;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .contact {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .contact a {
+      color: #2e7d32;
+      text-decoration: none;
+    }
+    .date {
+      float: right;
+      color: #666;
+    }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Your Name</h1>
-    <p class="contact">
-      Email: <a href="mailto:you@example.com">you@example.com</a> |
-      <a href="https://linkedin.com/in/yourprofile">LinkedIn</a> |
-      <a href="https://github.com/yourhandle">GitHub</a>
-    </p>
-  </header>
+  <h1>Winston D. Hurst</h1>
+  <div class="contact">
+    <p><a href="mailto:winstonhurst@ece.ucsb.edu">winstonhurst@ece.ucsb.edu</a> | (214) 476-0770</p>
+  </div>
 
-  <section class="section">
-    <h2>About</h2>
-    <p>
-      Brief 2-3 sentence bio about you. Include current role, interests, and maybe a sentence about your goals or work.
-    </p>
-  </section>
-
-  <section class="section">
-    <h2>Experience</h2>
-    <p><strong>Job Title</strong> — Company Name<br/>
-      <em>Location • Dates</em><br/>
-      - One-line description of what you did or achieved.<br/>
-      - Another bullet if needed.
-    </p>
-    <p><strong>Previous Role</strong> — Other Company<br/>
-      <em>Location • Dates</em><br/>
-      - Responsibilities and accomplishments.
-    </p>
-  </section>
-
-  <section class="section">
+  <div class="section">
     <h2>Education</h2>
-    <p><strong>Degree</strong> — University Name<br/>
-      <em>Graduation Year</em><br/>
-      - Relevant coursework, honors, thesis, etc.
-    </p>
-  </section>
+    <div class="clearfix">
+      <strong>PhD Candidate in Electrical Engineering</strong> – UC Santa Barbara <span class="date">2019 – Summer 2025 (Expected)</span>
+      <ul>
+        <li>Advisor: Dr. Yasamin Mostofi; GPA: 3.96</li>
+        <li>Research: Motion planning for communication-aware robotics, mmWave radar sensing applications</li>
+        <li>TA: Principles of Optimization, Probability Theory</li>
+        <li>Relevant Courses: Optimal Control, Nonlinear Control, ML, Optimal Estimation, Stochastic Processes</li>
+      </ul>
 
-  <section class="section">
-    <h2>Skills</h2>
+      <strong>BS in Computer Science</strong> – Brigham Young University <span class="date">2016</span>
+      <ul>
+        <li>GPA: 3.99, Magna Cum Laude with Honors, Full Tuition Academic Scholarship</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Experience</h2>
+    <h3>Graduate Student Researcher – UC Santa Barbara <span class="date">2019 – Present</span></h3>
     <ul>
-      <li>Programming languages: Python, C++
+      <li>Led a survey on autonomous vehicle motion planning for 6G networks (Proc. of the IEEE)</li>
+      <li>Developed algorithms for robotic motion planning and mmWave crowd sensing</li>
+      <li>Engineered a novel electromagnetic surface for 4-directional beamforming</li>
