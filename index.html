@@ -6,149 +6,189 @@
   <title>Winston D. Hurst – CV</title>
   <style>
     body {
+      margin: 0;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      background: #ffffff;
+      background-color: #eaf4ee;
       color: #333;
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
     }
-    h1, h2, h3 {
-      color: #2e7d32;
-      margin-top: 40px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 5px;
+
+    /* Sidebar */
+    .sidebar {
+      width: 280px;
+      background: #fff;
+      padding: 30px 20px;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    h1 {
-      text-align: center;
-      font-size: 2em;
-    }
-    h2 {
-      font-size: 1.5em;
-    }
-    h3 {
-      font-size: 1.2em;
-      margin-top: 20px;
-    }
-    .section {
+
+    .sidebar img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
       margin-bottom: 20px;
     }
+
+    .sidebar h1 {
+      font-size: 1.4rem;
+      color: #2e7d32;
+      margin: 0;
+    }
+
+    .sidebar p {
+      text-align: center;
+      font-size: 0.95rem;
+      margin-top: 5px;
+      color: #555;
+    }
+
+    .sidebar a {
+      color: #2e7d32;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main content */
+    .content {
+      overflow-y: auto;
+      padding: 40px 50px;
+      flex-grow: 1;
+    }
+
+    h2 {
+      color: #2e7d32;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
     ul {
       padding-left: 20px;
     }
+
     li {
       margin-bottom: 6px;
     }
-    .contact {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .contact a {
-      color: #2e7d32;
-      text-decoration: none;
-    }
-    .date {
-      float: right;
-      color: #666;
-    }
+
     .clearfix::after {
       content: "";
       display: table;
       clear: both;
     }
+
+    .date {
+      float: right;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        height: auto;
+      }
+      .sidebar {
+        width: 100%;
+        flex-direction: row;
+        padding: 15px;
+        justify-content: start;
+        gap: 20px;
+      }
+      .sidebar p {
+        text-align: left;
+      }
+      .content {
+        padding: 20px;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <h1>Winston D. Hurst</h1>
-  <div class="contact">
-    <p><a href="mailto:winstonhurst@ece.ucsb.edu">winstonhurst@ece.ucsb.edu</a> | (214) 476-0770</p>
+  <div class="sidebar">
+    <img src="winston.jpg" alt="Winston D. Hurst headshot">
+    <h1>Winston D. Hurst</h1>
+    <p><a href="mailto:winstonhurst@ece.ucsb.edu">winstonhurst@ece.ucsb.edu</a></p>
+    <p>(214) 476-0770</p>
+    <p><a href="https://linkedin.com/in/yourprofile">LinkedIn</a><br>
+       <a href="https://github.com/yourhandle">GitHub</a></p>
   </div>
 
-  <div class="section">
+  <div class="content">
     <h2>Education</h2>
-    <div class="clearfix">
-      <strong>PhD Candidate in Electrical Engineering</strong> – UC Santa Barbara <span class="date">2019 – Summer 2025 (Expected)</span>
-      <ul>
-        <li>Advisor: Dr. Yasamin Mostofi; GPA: 3.96</li>
-        <li>Research: Motion planning for communication-aware robotics, mmWave radar sensing applications</li>
-        <li>TA: Principles of Optimization, Probability Theory</li>
-        <li>Relevant Courses: Optimal Control, Nonlinear Control, ML, Optimal Estimation, Stochastic Processes</li>
-      </ul>
-
-      <strong>BS in Computer Science</strong> – Brigham Young University <span class="date">2016</span>
-      <ul>
-        <li>GPA: 3.99, Magna Cum Laude with Honors, Full Tuition Academic Scholarship</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Experience</h2>
-    <h3>Graduate Student Researcher – UC Santa Barbara <span class="date">2019 – Present</span></h3>
+    <h3>PhD Candidate in Electrical Engineering – UC Santa Barbara <span class="date">2019 – Summer 2025 (Expected)</span></h3>
     <ul>
-      <li>Led a survey on autonomous vehicle motion planning for 6G networks (Proc. of the IEEE)</li>
-      <li>Developed algorithms for robotic motion planning and mmWave crowd sensing</li>
-      <li>Engineered a novel electromagnetic surface for 4-directional beamforming</li>
+      <li>Advisor: Dr. Yasamin Mostofi; GPA: 3.96</li>
+      <li>Research: Communication-aware robotics, mmWave radar sensing</li>
+      <li>TA: Optimization, Probability Theory</li>
+      <li>Courses: Optimal Control, Machine Learning, Estimation, etc.</li>
     </ul>
 
+    <h3>BS in Computer Science – Brigham Young University <span class="date">2016</span></h3>
+    <ul>
+      <li>GPA: 3.99, Magna Cum Laude with Honors</li>
+    </ul>
+
+    <h2>Experience</h2>
+    <h3>Graduate Student Researcher – UCSB <span class="date">2019 – Present</span></h3>
+    <ul>
+      <li>Survey lead (Proc. of IEEE); novel planning algorithms; mmWave sensing</li>
+    </ul>
     <h3>Team Lead – Epic Systems <span class="date">2017 – 2019</span></h3>
     <ul>
-      <li>Managed 8 developers delivering 6+ software projects (>$1M total budget)</li>
-      <li>Introduced estimation process reducing project overruns</li>
-      <li>Advocated and staffed team for future workloads</li>
+      <li>Managed 8 devs across 6 projects; introduced project estimation system</li>
     </ul>
-
     <h3>Software Developer – Epic Systems <span class="date">2016 – 2017</span></h3>
     <ul>
-      <li>Full stack development using VB, C#, and MVC architecture</li>
-      <li>Prototyped a mobile physician voice assistant and NLP systems for clinical notes</li>
+      <li>Prototyped mobile voice assistant; built NLP clinical tools</li>
     </ul>
-  </div>
 
-  <div class="section">
     <h2>Skills</h2>
     <ul>
-      <li><strong>Motion Planning & Control:</strong> Dynamic Programming, Optimal Control, DRL, Control Barrier Functions, MIP</li>
-      <li><strong>Languages:</strong> Python, C++, Matlab, Java, JavaScript, VB, MUMPS</li>
-      <li><strong>Tools:</strong> Git, Linux, NumPy, SciPy, PyTorch, CGAL, CPLEX</li>
-      <li><strong>Concepts:</strong> APIs, MVC, OOP, FSM, Parallel Programming</li>
+      <li><strong>Motion Planning & Control:</strong> DP, Optimal Control, DRL, CBFs, MIP</li>
+      <li><strong>Languages:</strong> Python, C++, Matlab, Java, VB, MUMPS</li>
+      <li><strong>Tools:</strong> Git, Linux, PyTorch, CGAL, CPLEX</li>
+      <li><strong>Concepts:</strong> MVC, APIs, FSM, multithreading</li>
     </ul>
-  </div>
 
-  <div class="section">
     <h2>Publications</h2>
     <h3>Communication-Aware Path Planning</h3>
     <ul>
-      <li>“Unmanned Vehicles in 6G Networks,” <em>Proceedings of the IEEE</em>, 2025</li>
-      <li>“Minimizing Wait Time and Age of Information,” <em>IEEE ICC</em>, 2024</li>
-      <li>“Optimal Dynamic Trajectories for UAVs,” <em>IEEE CDC</em>, 2023</li>
-      <li>“Optimization of Mobile Robotic Relay Operation,” <em>IEEE TWC</em>, 2023</li>
-      <li>“Communication-Aware RRT*,” <em>IEEE ICC</em>, 2021</li>
+      <li>“Unmanned Vehicles in 6G Networks,” <em>Proc. IEEE</em>, 2025</li>
+      <li>“Minimizing Wait Time,” <em>IEEE ICC</em>, 2024</li>
+      <li>Others in CDC, TWC, ICC</li>
     </ul>
 
     <h3>RF Sensing and mmWave Radar</h3>
     <ul>
-      <li>“Crowd Analytics with a Single mmWave Radar,” <em>MobiCom</em>, 2024</li>
-      <li>“I Beg to Diffract: RF Field Programming with Edges,” <em>MobiCom</em>, 2023</li>
+      <li>MobiCom 2024 & 2023 – crowd analytics and RF edge programming</li>
     </ul>
 
     <h3>Dynamic Relay Selection</h3>
     <ul>
-      <li>“Relay Incentive Mechanisms Using Wireless Power,” <em>IEEE TWC</em></li>
-      <li>“Multi-Attribute Auctions for Efficient Relaying,” <em>ACC</em>, 2025</li>
-      <li>“Emergent Cooperation via Wireless Power,” <em>IEEE GLOBECOM</em>, 2024</li>
+      <li>Accepted to IEEE TWC, ACC 2025, and GLOBECOM 2024</li>
     </ul>
-  </div>
 
-  <div class="section">
     <h2>Volunteer Activities</h2>
     <ul>
-      <li><strong>Southern California Steelhead Conservation Lead</strong> – Santa Barbara Flyfishers (2023 – Present)<br/>
-      Organized outreach reaching 100+ people, partnered with CA Trout for habitat restoration</li>
-      <li><strong>Spanish Language GED Tutor</strong> – Academia Latina (2016 – 2018)<br/>
-      Taught core subjects to adults in Spanish, in classroom and one-on-one formats</li>
+      <li><strong>Steelhead Conservation Lead</strong> – Santa Barbara Flyfishers (2023–)</li>
+      <li><strong>GED Tutor (Spanish)</strong> – Academia Latina (2016–2018)</li>
     </ul>
   </div>
 
