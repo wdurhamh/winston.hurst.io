@@ -70,7 +70,6 @@
 
     h2 {
       color: #2e7d32;
-      border-bottom: 1px solid #ccc;
       padding-bottom: 5px;
       margin-top: 40px;
     }
@@ -86,8 +85,29 @@
       font-weight: 600;
     }
 
+    h4{
+      margin-top: 10px;
+      margin-bottom: 2px;
+    }
+
+    .section_heading{
+      border-bottom: 1px solid #ccc;
+
+    }
+
+    .section_heading h2{
+      margin-bottom: 0px;
+    }
+
+    .section_heading h3{
+      margin-top: 0px;
+      margin-bottom: 5px;
+    }
+
     ul {
       padding-left: 20px;
+      margin-top:5px;
+      margin-bottom: 5px;
     }
 
     li {
@@ -160,12 +180,14 @@
     <p><a href="https://www.linkedin.com/in/winstondhurst/">LinkedIn</a><br>
        <a href="https://scholar.google.com/citations?user=WwB1_GMAAAAJ&hl=en">Google Scholar</a></p>
     </div>
-    <p id="personal_statement">Curious and impact-driven problem solver with a strong foundation in software engineering, optimization, and control systems. Proven success in algorithm design, systems development, and technical leadership, backed by mathematical training and real-world experience.</p>
+    <p id="personal_statement">Versatile problem solver with published research at the intersection of communications, controls, and signal processing. Prior industry experience leading software teams on high-impact projects. Experienced in machine learning, algorithm design, and software with extensive hands-on hardware experience.</p>
   </div>
 
   <div class="content">
+    <div class="section_heading">
     <h2>Education</h2>
-    <h3>PhD, Electrical Engineering – UC Santa Barbara <span class="date">2019 – Summer 2025 (Expected)</span></h3>
+    </div>
+    <h3>PhD, Electrical Engineering – UC Santa Barbara <span class="date">Santa Barbara, CA; 2019 – Summer 2025 (Expected)</span></h3>
     <b>Research Interests:</b> Optimization and control for communication-aware robotics, mmWave radar sensing, Game theory and mechanism design for control of multiagent systems
     <details>
       <summary>Details (TA Positions and Coursework)</summary>
@@ -177,56 +199,88 @@
     </details>
     
 
-    <h3>BS, Computer Science – Brigham Young University <span class="date">Graduated 2016</span></h3>
+    <h3>BS, Computer Science – Brigham Young University <span class="date">Provo, UT; Graduated 2016</span></h3>
     <b>Undergraduate Thesis:</b> Dynamic Coalition Formation in Markets with Linear Demand, Advisor: Dr. Sean Warnick; Information and Decision Algorithms (IDeA) Labs
     <details>
       <summary>Details (GPA, Honors, and Awards)</summary>
       <ul>
         <li>GPA: 3.99, Magna Cum Laude with Honors</li>
         <li>Full tuition academic scholarship all years</li>
+        <li>Courses: Computer Systems, Data Structures, Advanced Programming Concepts, Computational and Probabilistic Models, Algorithm Design and Analysis, Software Design and Testing, Internet Programming, Intro. to Controls,  Computer Security, Intro to AI, ML and Data Mining</li>
       </ul>
     </details>
 
-    <h2>Experience</h2>
-      <h3>Graduate Student Researcher – UCSB <span class="date">2019 – Present</span></h3>
+    <div class=section_heading>
+    <h2>Research Experience</h2>
+      <h3>Graduate Student Researcher – UCSB <span class="date">Santa Barbara, CA; 2019 – Present</span></h3>
+    </div>
+    <h4>Machine Learning and Stochastic Methods for AV Planning in Communication Systems</h4>
       <ul>
-        <li>Led a group of 4 authors in a comprehensive survey of autonomous vehicles in 6G communication networks, appearing in <em>Proceedings of the IEEE</em> [Impact factor: 23.2]</li>
-        <li>Extracted crowd analytics with novel state-of-the-art mmWave sensing pipelines</li>
-        <li>Designed and implemented cutting-edge electromagnetic metasurface capable of beamforming in 4 directions simultaneously</li>
-        <li>Accelerated iterative design process with custom python script server for high-end EM simulator (Ansys HFSS)</li>
-        <li>Developed object-oriented python library for scientific wireless communication channel simulation and prediction</li>
-        <li>Minimized communication delays by optimizing robotic relay visit sequence using novel DRL algorithm implemented in PyTorch with CGAL and IBM CPLEX</li>
+        <li>Minimized communication delays by optimizing mobile relay trajectory using DRL</li>
+        <li>Reduced training time with novel transfer learning technique between problem instances</li>
+        <li>Optimized queueing models of mobile relay, relevant to autonomous driving services (robotaxis)</li>
+        <li>Extended RRT* to enable energy-efficient communication with obstacle avoidance</li>
+        <li> Developed object-oriented Python library for scientific wireless communication channel simulation</li>
+        <li>Published comprehensive survey on planning for autonomous vehicles in 6G communication networks</li>
+      </ul>
+      <h4>Signal Processing for Crowd Analytics with Real-World mmWave Radar</h4>
+      <ul>
+        <li>Collected extensive mmWave radar data capturing crowd dynamics using the TI AWR2243BOOST board</li>
+        </li>Enabled advanced crowd analytics with a novel mmWave processing pipeline with dataflow paradigm</li>
+      </ul>
+      <h4>RF Field Control with Diffraction-Based Metasurface</h4>
+      <ul>
+        <li>Accelerated iterative design process with custom Python script server for high-end EM simulator</li>
+        <li>Manufactured cutting-edge electromagnetic metasurface capable of multi-beam beamforming </li>
+      </ul>
+      <h4>Decentralized Control for Energy-Efficient mmWave Relay</h4>
+      <ul>
+        <li>Developed a novel auction-based crowdsourcing scheme for relay coordination, improving coverage in dead zones without additional service provider infrastructure costs</li>
+      </ul>
+      <h4>Academic Services</h4>
+      <ul>
+        <li>TA Positions: Principles of Optimization, Probability Theory; Outstanding ECE TA Award 2019 & 2020</li>
+        <li>Peer Reviewer: JPROC, ACC, CDC, TCNS, TWC, SPL</li>
       </ul>
 
-      <h3>Team Lead – Epic Systems <span class="date">2017 – 2019</span></h3>
+
+    <div class=section_heading>
+      <h2>Industry Experience</h2>
+      <h3>Team Lead/Software Developer – Epic Systems <span class="date">Madison, WI; 2016-2019</span></h3>
+    </div>
+    <h4>Leadership and Communication</h4>
       <ul>
-        <li>Led team of 8 developers to deliver 6 enterprise-grade international software projects (> $1M total budget), coordinating across stakeholders and meeting strict timelines</li>
+        <li>Led team of 8 developers integrating Epic software with national health systems in European countries (> $1M total budget), coordinating across stakeholders and meeting strict timelines</li>
         <li>Coached underperforming team member through weekly goal setting and evaluation</li>
-        <li>Eliminated project budget overruns through the design and rollout of a standardized estimation process, enabling improved forecasting and resource planning</li>
-        <li>Ensured sufficient staffing by projecting future workloads and advocating for 2 additional developers</li>
+        <li>Eliminated project budget overruns through the design and rollout of a standardized estimation process</li>
       </ul>
 
-      <h3>Software Developer – Epic Systems <span class="date">2016 – 2017</span></h3>
+      <h4>Software Development</h4>
       <ul>
         <li>Implemented full-stack features using OOP and MVC architecture in VB and C#</li>
         <li>Streamlined patient rooming experience with physician voice assistant prototype for mobile devices</li>
         <li>Reduced physician administrative burden with NLP application for parsing clinical notes</li>
       </ul>
     
-
-    <h2>Skills</h2>
+    <div class="section_heading">
+      <h2>Skills</h2>
+    </div>
     <ul>
-      <li><strong>Optimization, Control, and Planning:</strong> Convex Optimization, Dynamic Programming, Optimal Control, DRL, CBFs, MIP, VRP, Mathematical Programming</li>
+      <li><strong>Optimization, Control, and Planning:</strong> Reinforcement Learning (RL), Deep RL, Convex Optimization, Dynamic Programming, Optimal Control, Model Predictive Control, Vehicle Routing Problem, Mathematical Programming</li>
+      <li><strong>RF Sensing:</strong>TI AWR2243BOOST mmWave radar board, FMCW radar, Geometric Theory of Diffraction </li>
       <li><strong>Scientific Computing:</strong> SciPy PyTorch, CVXPY, CLARABEL, CGAL, CPLEX</li>
       <li><strong>Coding Languages:</strong> Python, C++, Matlab, Java, VB, MUMPS, C#</li>
       <li><strong>Coding Tools and Concepts:</strong> Git, Linux, OOP, MVC, APIs, FSM, multithreading</li>
     </ul>
 
-    <h2>Submitted Patent</h2>
+    <div class="section_heading">
+      <h2>Patent</h2>
+    </div>
     Y. Mostofi, A. Pallaprolu, B. Korany, and W. Hurst, "<a href="https://patentcenter.uspto.gov/applications/18904812">Exploiting diffraction for sensing with rf signals and/or for rf field programming</a>," <em>US Patent App. 18/904812</em>, 2025
 
-    <h2>Publications</h2>
-
+    <div class="section_heading">
+      <h2>Publications</h2>
+    </div>
     <h3>Communication-Aware Path Planning</h3>
     <ul>
       <li>W. Hurst, S. Evmorfos, A. Petropulu, and Y. Mostfoi, "<a href="https://arxiv.org/pdf/2404.14738">Uncrewed vehicles in 6G networks: A unifying treatment of problems, formulations, and tools</a>," <em>Proc. IEEE</em>, 2025</li>
@@ -251,10 +305,11 @@
       <li> W. Hurst, A. Pallaprolu, and Y. Mostofi, "<a href="https://arxiv.org/pdf/2404.14729">Emergent cooperation for energy-efficient connectivity via wireless power transfer</a>," <em>IEEE Global Communications Conference (GLOBECOM)</em>, 2024
     </ul>
 
-
-    <h2>Volunteer Activities</h2>
+    <div class="section_heading">
+      <h2>Volunteer Activities</h2>
+    </div>
     <details>
-      <summary><strong>Steelhead Conservation Lead</strong> – Santa Barbara Flyfishers (2023–2025)</summary>
+      <summary><strong>Steelhead Conservation Lead</strong> – Santa Barbara Flyfishers <span class="date">Santa Barbara, CA; 2023–Present</span></summary>
       <ul style="margin-top: 5px;">
         <li>Delivered public comments to the California Fish and Game Commission in support of listing Southern Steelhead as endangered, representing Santa Barbara Flyfishers in a successful coalition effort with other NGO's</li>
         <li>Organized a community outreach campaign engaging 100+ attendees, advocating for steelhead conservation</li>
@@ -264,7 +319,7 @@
     </details>
 
     <details>
-      <summary><strong>GED Tutor (Spanish)</strong> – Academia Latina (2016–2018)</summary>
+      <summary><strong>GED Tutor (Spanish)</strong> – Academia Latina <span class="date">Madison, WI; 2016–2018</span></summary>
       <ul style="margin-top: 5px;">
         <li>Taught math, science, reading, and social studies to adults in Spanish</li>
         <li>Tutored students one on one as well as in larger classroom settings</li>
